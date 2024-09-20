@@ -12,8 +12,8 @@ from scipy.linalg import toeplitz
 try:
     from scipy.signal.windows import medfilt, hann, filtfilt, blackman, hamming, buttord, butter, lfiltic, lfilter
 except:
-    from scipy.signal import medfilt, hann, filtfilt, blackman, hamming, buttord, butter, lfiltic, lfilter
-
+    from scipy.signal import medfilt, filtfilt, blackman, hamming, buttord, butter, lfiltic, lfilter
+    from scipy.signal.windows import hann
 
 def smooth(a,WSZ):
     # a: NumPy 1-D array containing the data to be smoothed
