@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from .phonation import phonation
+from .phonation import Phonation
 from .phonation_functions import *
 
 
